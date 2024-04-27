@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 
 interface WidgetProps {
-  children: ReactNode;
+  children?: ReactNode
 }
 
 export function Widget({ children }: WidgetProps) {
@@ -10,5 +10,5 @@ export function Widget({ children }: WidgetProps) {
       <h1>Widget</h1>
       {children}
     </>
-  );
+  )
 }
