@@ -49,5 +49,26 @@ describe('widget-notification spec', () => {
         .should('be.visible')
         .should('have.text', 'Há 3 min')
     })
+
+    it('should render notification block with buttons successfully', () => {
+      cy.get('div.divide-y-2').should('be.visible')
+      cy.get('div>svg.text-violet-500').should('be.visible')
+      cy.get(
+        ':nth-child(2) > .divide-y-2 > :nth-child(1) > .flex-1 > .text-sm'
+      ).should('be.visible')
+      cy.get(
+        ':nth-child(2) > .divide-y-2 > :nth-child(1) > .flex-1 > .text-xxs > :nth-child(1)'
+      )
+        .should('be.visible')
+        .should('have.text', 'Convite')
+      cy.get(
+        ':nth-child(2) > .divide-y-2 > :nth-child(1) > .flex-1 > .text-xxs > :nth-child(2)'
+      )
+        .should('be.visible')
+        .should('have.text', 'Há 3 min')
+      // buttons
+      cy.get('#close-button').should('be.visible')
+      cy.get('#check-button').should('be.visible')
+    })
   })
 })
