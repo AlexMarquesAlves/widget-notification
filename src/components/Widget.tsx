@@ -57,7 +57,7 @@ export function Widget({ children }: WidgetProps) {
         {/* Ancient Section */}
         <div className="">
           <div className="bg-zinc-950 px-5 py-2 text-sm text-zinc-400">
-            Recentes
+            Antigas
           </div>
 
           <div className="divide-y-2 divide-zinc-950">
@@ -65,7 +65,7 @@ export function Widget({ children }: WidgetProps) {
             <div className="bg-zinc-900 px-8 py-4 flex items-start gap-6">
               <Rocket className="h-6 w-6 text-violet-500 mt-3" />
               <div className="flex-1 flex flex-col gap-2">
-                <p className="text-sm leading-relaxed text-zinc-100">
+                <p className="text-sm leading-relaxed text-zinc-400">
                   Voce recebeu um convite para fazer parte da empresa
                   Rocketseat.
                 </p>
@@ -79,7 +79,7 @@ export function Widget({ children }: WidgetProps) {
             <div className="bg-zinc-900 px-8 py-4 flex items-start gap-6">
               <Rocket className="h-6 w-6 text-violet-500 mt-3" />
               <div className="flex-1 flex flex-col gap-2">
-                <p className="text-sm leading-relaxed text-zinc-100">
+                <p className="text-sm leading-relaxed text-zinc-400">
                   Voce recebeu um convite para fazer parte da empresa
                   Rocketseat.
                 </p>
