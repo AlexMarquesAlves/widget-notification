@@ -25,6 +25,14 @@ export function Widget({ children }: WidgetProps) {
 
           <div className="bg-zinc-900 px-8 py-4 flex items-start gap-6">
             <Rocket className="h-6 w-6 text-violet-500" />
+            <div>
+              <p>
+                Voce recebeu um convite para fazer parte da empresa Rocketseat.
+              </p>
+              <div>
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
         {/* Ancient Section */}
