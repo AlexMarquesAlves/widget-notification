@@ -71,4 +71,12 @@ describe('widget-notification spec', () => {
       cy.get('#check-button').should('be.visible')
     })
   })
+
+  describe('should render old section successfully', () => {
+    it('should render recent block successfully', () => {
+      cy.get(':nth-child(3) > .bg-zinc-300')
+        .should('be.visible')
+        .should('contain', 'Antigas')
+    })
+  })
 })
