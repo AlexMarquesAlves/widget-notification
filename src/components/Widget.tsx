@@ -1,3 +1,4 @@
+import { Rocket } from 'lucide-react'
 import { ReactNode } from 'react'
 
 interface WidgetProps {
@@ -23,7 +24,7 @@ export function Widget({ children }: WidgetProps) {
           </div>
 
           <div className="bg-zinc-800 px-8 py-4 flex items-start gap-6">
-            ícone
+            <Rocket />
           </div>
         </div>
         {/* Ancient Section */}
