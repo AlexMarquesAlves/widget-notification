@@ -19,12 +19,12 @@ export function Widget({ children }: WidgetProps) {
 
         {/* Recent Section */}
         <div className="">
-          <div className="bg-zinc-900 px-5 py-2 text-sm text-zinc-400">
+          <div className="bg-zinc-950 px-5 py-2 text-sm text-zinc-400">
             Recentes
           </div>
 
-          <div className="bg-zinc-800 px-8 py-4 flex items-start gap-6">
-            <Rocket />
+          <div className="bg-zinc-900 px-8 py-4 flex items-start gap-6">
+            <Rocket className="h-6 w-6 text-violet-500" />
           </div>
         </div>
         {/* Ancient Section */}
