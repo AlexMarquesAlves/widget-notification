@@ -1,4 +1,4 @@
-import { Rocket } from 'lucide-react'
+import { Check, Rocket, X } from 'lucide-react'
 import { ReactNode } from 'react'
 
 interface WidgetProps {
@@ -50,6 +50,15 @@ export function Widget({ children }: WidgetProps) {
                   <span>Convite</span>
                   <span>Há 3 min</span>
                 </div>
+              </div>
+
+              <div>
+                <button>
+                  <X className="w-[10px] h-[10px] text-zinc-50" />
+                </button>
+                <button>
+                  <Check className="w-[10px] h-[10px] text-zinc-50" />
+                </button>
               </div>
             </div>
           </div>
