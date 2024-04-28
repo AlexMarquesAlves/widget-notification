@@ -23,7 +23,7 @@ export function Widget({ children }: WidgetProps) {
             Recentes
           </div>
 
-          <div>
+          <div className="divide-y-2 divide-zinc-950">
             {/* notification block */}
             <div className="bg-zinc-900 px-8 py-4 flex items-start gap-6">
               <Rocket className="h-6 w-6 text-violet-500 mt-3" />
