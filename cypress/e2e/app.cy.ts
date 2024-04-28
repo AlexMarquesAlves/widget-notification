@@ -24,4 +24,12 @@ describe('widget-notification spec', () => {
         .should('contain', 'MARCAR TODAS COMO VISTAS')
     })
   })
+
+  describe('should render recent section successfully', () => {
+    it('should render recent block successfully', () => {
+      cy.get(':nth-child(2) > .bg-zinc-300')
+        .should('be.visible')
+        .should('contain', 'Recentes')
+    })
+  })
 })
