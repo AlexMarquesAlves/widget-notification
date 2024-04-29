@@ -11,7 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     # Define the container name.
-    container_name: demo-widget-notification-nextjs-dev
+    container_name: demo-kipper-portfolio-wallaby-dev
     # Define the environment variable WATCHPACK_POLLING as true. This is necessary for hot reload to work correctly.
     environment:
       - WATCHPACK_POLLING=true
@@ -37,7 +37,7 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     # Define the container name.
-    container_name: demo-widget-notification-nextjs
+    container_name: demo-kipper-portfolio-wallaby
     # Maps the ports to be exposed on the host.
     ports:
       - "3000:3000"

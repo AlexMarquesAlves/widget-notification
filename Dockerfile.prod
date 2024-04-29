@@ -5,18 +5,18 @@ FROM node:20 AS base
 # We need to set the working directory so Docker knows where to run the commands.
 WORKDIR /app
 
-# Copy the package.json and npm-lock.json files to the working directory in the container.
+# Copy the package.json and yarn-lock.json files to the working directory in the container.
 # This command is necessary for Docker to install project dependencies.
-COPY package*.json  ./
+COPY package.json yarn.lock ./
 
-# Install project dependencies using npm.
-RUN npm install
+# Install project dependencies using yarn.
+RUN yarn install
 
 # Copy all files from the context directory (where the Dockerfile is located) to the working directory in the container.
 COPY . .
 
-# Run the project build command using npm.
-RUN npm run build
+# Run the project build command using yarn.
+RUN yarn run build
 
 # Define a second stage of the image based on node:20-alpine3.19 and name it as release.
 # Alpine image is a lighter version of node, which helps reduce the final image size.
@@ -34,5 +34,5 @@ COPY --from=base /app/package.json ./package.json
 # Copy the .next folder from the base stage to the .next directory in the release stage.
 COPY --from=base /app/.next ./.next
 
-# Define the default command to be executed when the container is started with npm start.
-CMD ["npm", "run", "start"]
+# Define the default command to be executed when the container is started with yarn start.
+CMD ["yarn", "start"]
